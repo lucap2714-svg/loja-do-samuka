@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja do Samuka | Arte & Missão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              canvas: {
+                DEFAULT: 'var(--color-canvas)',
+                paper: 'var(--color-paper)',
+                alt: 'var(--color-canvas-alt)',
+              },
+              amazon: {
+                deep: 'var(--color-amazon-deep)',
+                forest: 'var(--color-amazon-forest)',
+                leaf: 'var(--color-amazon-leaf)',
+                soft: 'var(--color-amazon-soft)',
+              },
+              gold: {
+                DEFAULT: 'var(--color-gold)',
+                hover: 'var(--color-gold-hover)',
+                bright: 'var(--color-gold-bright)',
+              },
+              earth: {
+                DEFAULT: 'var(--color-earth)',
+                light: 'var(--color-earth-light)',
+                faint: 'var(--color-earth-faint)',
+              },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+            },
+            backgroundImage: {
+              'jungle-light': "var(--bg-jungle)",
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        --color-canvas: #F9F8F4;
+        --color-paper: #FFFFFF;
+        --color-canvas-alt: #F2F5F3;
+        --color-amazon-deep: #051F12;
+        --color-amazon-forest: #0F3D24;
+        --color-amazon-leaf: #1A472A;
+        --color-amazon-soft: #E8F5E9;
+        --color-gold: #B89628;
+        --color-gold-hover: #D4AF37;
+        --color-gold-bright: #F2C94C;
+        --color-earth: #3A4A38;
+        --color-earth-light: #6D8B74;
+        --color-earth-faint: #D8E2DC;
+        --bg-jungle: linear-gradient(to bottom, rgba(249, 248, 244, 0.95), rgba(242, 245, 243, 1));
+        --scrollbar-track: #F9F8F4;
+        --scrollbar-thumb: #3A4A38;
+      }
+
+      .dark {
+        --color-canvas: #02120a;
+        --color-paper: #0a291a;
+        --color-canvas-alt: #051a10;
+        --color-amazon-deep: #F0FDF4;
+        --color-amazon-forest: #A7F3D0;
+        --color-amazon-leaf: #34D399;
+        --color-amazon-soft: #064e3b;
+        --color-gold: #D4AF37;
+        --color-gold-hover: #F2C94C;
+        --color-gold-bright: #FFD700;
+        --color-earth: #6B8E73;
+        --color-earth-light: #8EB598;
+        --color-earth-faint: #1C3325;
+        --bg-jungle: linear-gradient(to bottom, rgba(2, 18, 10, 0.95), rgba(5, 26, 16, 1));
+        --scrollbar-track: #02120a;
+        --scrollbar-thumb: #6B8E73;
+      }
+
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+      ::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb);
+        border-radius: 4px;
+        border: 1px solid var(--scrollbar-track);
+      }
+      ::-webkit-scrollbar-thumb:hover { background: var(--color-amazon-leaf); }
+      
+      body {
+        background-color: var(--color-canvas);
+        color: var(--color-amazon-deep);
+        overflow-x: hidden;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+
+      .glass-card {
+        background: var(--color-paper);
+        background-color: color-mix(in srgb, var(--color-paper), transparent 20%);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid color-mix(in srgb, var(--color-earth), transparent 70%);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .dark .glass-card {
+        background-color: color-mix(in srgb, var(--color-paper), transparent 10%);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+      
+      .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+    </style>
+
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-Cz14WceM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-tn0RQdqM.css">
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
